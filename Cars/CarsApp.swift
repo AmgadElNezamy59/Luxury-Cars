@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct CarsApp: App {
     @State private var garage = Garage()
+    @State private var showsSplash = true
 
     init() {
         Theme.applyNavigationBarStyle()
@@ -17,8 +18,18 @@ struct CarsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
-                .environment(garage)
+            ZStack {
+                RootView()
+
+                if showsSplash {
+                    SplashView {
+                        withAnimation(.easeOut(duration: 0.45)) { showsSplash = false }
+                    }
+                    .transition(.opacity.combined(with: .scale(scale: 1.08)))
+                    .zIndex(1)
+                }
+            }
+            .environment(garage)
         }
     }
 }
