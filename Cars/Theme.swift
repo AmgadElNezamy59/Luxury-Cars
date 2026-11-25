@@ -61,6 +61,22 @@ extension View {
     }
 }
 
+/// The main call to action: a full-width gold capsule. The label uses the system
+/// background colour so it stays legible on light gold (dark mode) and deep gold (light mode).
+struct ProminentButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.headline)
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 16)
+            .foregroundStyle(Color(.systemBackground))
+            .background(Theme.accent, in: Capsule())
+            .opacity(configuration.isPressed ? 0.8 : 1)
+            .scaleEffect(configuration.isPressed ? 0.98 : 1)
+            .animation(.spring(duration: 0.25), value: configuration.isPressed)
+    }
+}
+
 /// Gently shrinks a card while it's pressed.
 struct PressableStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {

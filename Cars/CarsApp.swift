@@ -36,7 +36,7 @@ struct CarsApp: App {
 
 struct RootView: View {
     private enum AppTab: Hashable {
-        case showroom, timeline, garage
+        case showroom, timeline, quiz, garage
     }
 
     @Environment(Garage.self) private var garage
@@ -51,6 +51,10 @@ struct RootView: View {
             TimelineView()
                 .tabItem { Label("Timeline", systemImage: "hourglass") }
                 .tag(AppTab.timeline)
+
+            QuizView()
+                .tabItem { Label("Quiz", systemImage: "flag.checkered") }
+                .tag(AppTab.quiz)
 
             GarageView(browseShowroom: { selection = .showroom })
                 .tabItem { Label("Garage", systemImage: "heart.fill") }
