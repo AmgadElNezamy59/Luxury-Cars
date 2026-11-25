@@ -19,13 +19,15 @@ struct Brand: Identifiable, Hashable {
     let colors: (deep: Color, light: Color)
     let story: [String]
     let models: [CarModel]
+    let milestones: [Milestone]
     let wikipedia: URL
 
     init(
         id: String, name: String, tagline: String,
         founded: Int, country: String, headquarters: String,
         colors: (deep: UInt32, light: UInt32),
-        story: [String], models: [(name: String, kind: String)], wikipedia: String
+        story: [String], models: [(name: String, kind: String)],
+        milestones: [(year: Int, title: String, detail: String)], wikipedia: String
     ) {
         self.id = id
         self.name = name
@@ -36,6 +38,9 @@ struct Brand: Identifiable, Hashable {
         self.colors = (Color(hex: colors.deep), Color(hex: colors.light))
         self.story = story
         self.models = models.map { CarModel(id: "\(id)/\($0.name)", name: $0.name, kind: $0.kind) }
+        self.milestones = milestones.map {
+            Milestone(id: "\(id)/\($0.year)", year: $0.year, title: $0.title, detail: $0.detail)
+        }
         self.wikipedia = URL(string: wikipedia)!
     }
 
@@ -48,6 +53,14 @@ struct CarModel: Identifiable, Hashable {
     let id: String
     let name: String
     let kind: String
+}
+
+/// A moment in a brand's history, shown on the timeline.
+struct Milestone: Identifiable {
+    let id: String
+    let year: Int
+    let title: String
+    let detail: String
 }
 
 extension Color {

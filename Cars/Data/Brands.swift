@@ -29,6 +29,12 @@ extension Brand {
                 ("Wraith", "Grand tourer"),
                 ("Spectre", "Electric coupé"),
             ],
+            milestones: [
+                (1904, "Rolls meets Royce", "Charles Rolls and Henry Royce meet at the Midland Hotel in Manchester."),
+                (1907, "The Silver Ghost", "A record-breaking reliability run earns it the title \"best car in the world.\""),
+                (2003, "A new home at Goodwood", "Production moves to Goodwood, England, under BMW ownership."),
+                (2023, "Spectre goes electric", "The first all-electric Rolls-Royce reaches its owners."),
+            ],
             wikipedia: "https://en.wikipedia.org/wiki/Rolls-Royce_Motor_Cars"
         ),
         Brand(
@@ -49,6 +55,12 @@ extension Brand {
                 ("Chiron", "Hypercar"),
                 ("Divo", "Track-focused hypercar"),
                 ("Tourbillon", "Hybrid hypercar"),
+            ],
+            milestones: [
+                (1909, "Bugatti is founded", "Ettore Bugatti sets up shop in Molsheim, Alsace."),
+                (1924, "The Type 35 debuts", "It goes on to win well over a thousand races."),
+                (2005, "The Veyron arrives", "The first series-production car with more than 1,000 PS."),
+                (2024, "Tourbillon unveiled", "A V16 hybrid hypercar opens Bugatti's next chapter."),
             ],
             wikipedia: "https://en.wikipedia.org/wiki/Bugatti"
         ),
@@ -71,6 +83,12 @@ extension Brand {
                 ("Z4", "Roadster"),
                 ("i7", "Electric sedan"),
             ],
+            milestones: [
+                (1916, "Born in Munich", "BMW begins life as a maker of aircraft engines."),
+                (1923, "The first motorcycle", "The R 32 puts BMW on two wheels."),
+                (1962, "The Neue Klasse", "A compact, sporty sedan sets the formula BMW still follows."),
+                (1975, "The 3 Series debuts", "It grows into BMW's best-selling model line."),
+            ],
             wikipedia: "https://en.wikipedia.org/wiki/BMW"
         ),
         Brand(
@@ -91,6 +109,12 @@ extension Brand {
                 ("Bentayga", "Luxury SUV"),
                 ("Mulsanne", "Flagship sedan"),
                 ("Batur", "Coachbuilt grand tourer"),
+            ],
+            milestones: [
+                (1919, "W.O. founds Bentley", "Bentley Motors is founded in London."),
+                (1924, "First Le Mans victory", "The first of five Bentley wins at Le Mans by 1930."),
+                (1931, "Rolls-Royce takes over", "The Great Depression forces a sale to its great rival."),
+                (2003, "The Continental GT", "A modern grand tourer revives the brand under Volkswagen."),
             ],
             wikipedia: "https://en.wikipedia.org/wiki/Bentley"
         ),
@@ -113,6 +137,12 @@ extension Brand {
                 ("SL", "Roadster"),
                 ("EQS", "Electric sedan"),
             ],
+            milestones: [
+                (1886, "The Motorwagen", "Karl Benz patents what's widely seen as the first practical automobile."),
+                (1901, "The first Mercedes", "Emil Jellinek names a Daimler racing car after his daughter."),
+                (1926, "Daimler-Benz is formed", "The two pioneers merge, and Mercedes-Benz is born."),
+                (1954, "The 300 SL Gullwing", "Its upward-opening doors become an instant icon."),
+            ],
             wikipedia: "https://en.wikipedia.org/wiki/Mercedes-Benz"
         ),
         Brand(
@@ -133,6 +163,12 @@ extension Brand {
                 ("Cayenne", "SUV"),
                 ("Macan", "Compact SUV"),
                 ("Taycan", "Electric sports sedan"),
+            ],
+            milestones: [
+                (1931, "An engineering office", "Ferdinand Porsche opens his consultancy in Stuttgart."),
+                (1948, "The 356", "Ferry Porsche builds the first Porsche-badged car."),
+                (1963, "The 911 debuts", "Its rear-engined silhouette is still in production today."),
+                (2019, "Taycan goes electric", "Porsche launches its first all-electric sports car."),
             ],
             wikipedia: "https://en.wikipedia.org/wiki/Porsche"
         ),
@@ -155,6 +191,12 @@ extension Brand {
                 ("12Cilindri", "V12 grand tourer"),
                 ("Purosangue", "Four-door, four-seater"),
             ],
+            milestones: [
+                (1947, "The first Ferrari", "The 125 S carries Enzo's name for the first time."),
+                (1950, "Into Formula One", "Ferrari races in the first world championship and every season since."),
+                (1987, "The F40", "Built to celebrate Ferrari's 40th anniversary."),
+                (2013, "LaFerrari", "Ferrari's first hybrid hypercar."),
+            ],
             wikipedia: "https://en.wikipedia.org/wiki/Ferrari"
         ),
         Brand(
@@ -175,6 +217,12 @@ extension Brand {
                 ("Revuelto", "Hybrid V12 supercar"),
                 ("Temerario", "Hybrid V8 supercar"),
                 ("Urus", "Super SUV"),
+            ],
+            milestones: [
+                (1963, "Lamborghini is founded", "Ferruccio Lamborghini sets out to build a better grand tourer."),
+                (1966, "The Miura", "The car that defined the mid-engined supercar."),
+                (1974, "The Countach", "A wedge-shaped poster car for a generation."),
+                (2018, "The Urus", "Lamborghini's super SUV becomes its best-seller."),
             ],
             wikipedia: "https://en.wikipedia.org/wiki/Lamborghini"
         ),
